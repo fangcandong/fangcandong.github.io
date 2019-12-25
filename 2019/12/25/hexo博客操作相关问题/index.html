@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | Hexo</title>
+  <title>hexo博客操作相关问题 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+  <meta name="description" content="引言 hexo博客搭建后，开始了相关操作。 操作的过程中遇到一些问题，解决了一些问题，也残留了一部分问题待解决。 现归纳整理如下：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo博客操作相关问题">
+<meta property="og:url" content="http://yoursite.com/2019/12/25/hexo%E5%8D%9A%E5%AE%A2%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="引言 hexo博客搭建后，开始了相关操作。 操作的过程中遇到一些问题，解决了一些问题，也残留了一部分问题待解决。 现归纳整理如下：">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-12-25T00:04:51.000Z">
+<meta property="article:modified_time" content="2019-12-25T00:34:53.496Z">
 <meta property="article:author" content="青山君">
+<meta property="article:tag" content="博客">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -150,36 +155,76 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-hexo博客操作相关问题" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      hexo博客操作相关问题
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/25/hexo%E5%8D%9A%E5%AE%A2%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/" class="archive-article-date">
+
+        
+        <a href="/2019/12/25/hexo%E5%8D%9A%E5%AE%A2%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/" class="archive-article-date">
   	<time datetime="2019-12-25T00:04:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-25</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/25/hexo%E5%8D%9A%E5%AE%A2%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/">hexo博客操作相关问题</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><blockquote>
+<p>hexo博客搭建后，开始了相关操作。</p>
+<p>操作的过程中遇到一些问题，解决了一些问题，也残留了一部分问题待解决。</p>
+<p>现归纳整理如下：</p>
+</blockquote>
+<a id="more"></a>
 
-        <div class="article-info info-on-right">
-          
+<h2 id="一、关于图片"><a href="#一、关于图片" class="headerlink" title="一、关于图片"></a>一、关于图片</h2><p>&emsp;&emsp;图片不能正常加载显示是我遇到的第一个问题。一开始很固执，使用Typora软件的图片格式，觉得! <a href></a>很酷，然后坚持使用绝对路径。之所以反对相对路径是因为绝对路径鼠标点几下就OK了，而相对路径需要键盘书写。</p>
+<p>&emsp;&emsp;<strong><em>事实证明，偷懒是不可取的！</em></strong>正确格式如下：</p>
+<blockquote>
+<p>&lt; img src=”图片相对路径” width=xxx&gt;</p>
+</blockquote>
+<h2 id="二、github相关（待解决）"><a href="#二、github相关（待解决）" class="headerlink" title="二、github相关（待解决）"></a>二、github相关（待解决）</h2><p>&emsp;&emsp;github问题描述：我把github上的hexo博客源代码下载到本地，但是无法运行，出现WARN no layout错误提示。初次之外，我非常不解的是为什么本地仓库文件没能与远程仓库一一对应？.gitignore文件起一部分作用，另一部分呢？是hexo部署插件的缘故吗？</p>
+<h2 id="三、MarkDown相关"><a href="#三、MarkDown相关" class="headerlink" title="三、MarkDown相关"></a>三、MarkDown相关</h2><p>&emsp;&emsp;maekdown语法使用过程中第一个坑是空格。</p>
+<ul>
+<li>在软件中编写的空格是不算数的，必须使用字符代表；</li>
+<li>一个空格（相当于半个字符）：&amp;nbsp,不要忘了后面的分号</li>
+<li>两个空格（一个字符）：&amp;emsp.</li>
+</ul>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>[markdown语法-空格][<a href="https://www.cnblogs.com/klchang/p/10203404.html]" target="_blank" rel="noopener">https://www.cnblogs.com/klchang/p/10203404.html]</a></p>
+<p>[hexo的yilia主题修改方法][<a href="https://www.cnblogs.com/zhangxiaochn/p/Hexo_Theme_Yilia.html]" target="_blank" rel="noopener">https://www.cnblogs.com/zhangxiaochn/p/Hexo_Theme_Yilia.html]</a></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -191,157 +236,130 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2019/12/25/hexo%E5%8D%9A%E5%AE%A2%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/24/%E3%80%8A%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F%E3%80%8B%E8%A7%82%E5%90%8E%E6%84%9F/" class="archive-article-date">
-  	<time datetime="2019-12-24T06:06:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-24</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/12/24/%E3%80%8A%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F%E3%80%8B%E8%A7%82%E5%90%8E%E6%84%9F/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">《权力的游戏》观后感</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/24/%E3%80%8A%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F%E3%80%8B%E8%A7%82%E5%90%8E%E6%84%9F/">《权力的游戏》观后感</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">影视</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">生活感悟</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#引言"><span class="toc-number">1.</span> <span class="toc-text">引言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一、关于图片"><span class="toc-number">2.</span> <span class="toc-text">一、关于图片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、github相关（待解决）"><span class="toc-number">3.</span> <span class="toc-text">二、github相关（待解决）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、MarkDown相关"><span class="toc-number">4.</span> <span class="toc-text">三、MarkDown相关</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考文献"><span class="toc-number">5.</span> <span class="toc-text">参考文献</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/23/second/" class="archive-article-date">
-  	<time datetime="2019-12-23T00:25:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-23</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/23/second/">second</a>
-    </h1>
+  
+  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script>
+  var cloudTieConfig = {
+    url: "http://yoursite.com/2019/12/25/hexo%E5%8D%9A%E5%AE%A2%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/", 
+    sourceId: "hexo博客操作相关问题",
+    productKey: "true",
+    target: "cloud-tie-wrapper"
+  };
+</script>
+<script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/22/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2019-12-22T09:30:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/22/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">hexo博客搭建过程</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">node.js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/22/hello-world/" class="archive-article-date">
-  	<time datetime="2019-12-22T09:21:44.220Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/22/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -364,8 +382,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
